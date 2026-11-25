@@ -1,8 +1,8 @@
 # Laundly Web
 
-![Laundly logo](public/laundly-logo.webp)
+![Laundly logo](public/laundly-mark.webp)
 
-Next.js and TypeScript starter for the Laundly website. The home route is blank and ready for development.
+Next.js and TypeScript starter for the Laundly website. The site shares a navigation bar and footer across the blank home page and the placeholder legal pages at `/privacy` and `/terms`.
 
 ## Local development
 
