@@ -7,9 +7,11 @@ import { legalPages } from "../components/LegalPageLayout";
 import { SmoothScroll } from "../components/SmoothScroll";
 import "./globals.css";
 
+const brandName = "LabaPilot";
+
 export const metadata: Metadata = {
-  title: { default: "Laundly", template: "%s | Laundly" },
-  description: "Laundly",
+  title: { default: brandName, template: "%s | " + brandName },
+  description: "Laundry management software for orders, machines, and branches.",
   icons: { icon: "/laundly-mark.webp" },
 };
 
@@ -20,9 +22,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <SmoothScroll />
         <header className="site-header">
           <nav className="nav-pill" aria-label="Main navigation">
-            <Link href="/" className="brand" aria-label="Laundly home">
+            <Link href="/" className="brand" aria-label={brandName + " home"}>
               <Image src="/laundly-mark.webp" width={30} height={30} alt="" unoptimized />
-              Laundly
+              {brandName}
             </Link>
             <div className="site-links">
               <Link href="/">Home</Link>
@@ -33,7 +35,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <main className="site-main">{children}</main>
         <footer className="site-footer">
           <div className="site-row">
-            <Link href="/" className="footer-brand">Laundly</Link>
+            <Link href="/" className="footer-brand">{brandName}</Link>
             <nav className="site-links" aria-label="Legal">
               {legalPages.map(({ href, label }) => <Link key={href} href={href}>{label}</Link>)}
             </nav>

@@ -1,6 +1,6 @@
-# Laundly Web
+# LabaPilot Web
 
-![Laundly logo](public/laundly-mark.webp)
+![LabaPilot logo](public/laundly-mark.webp)
 
 Next.js and TypeScript site shell with floating navigation, a footer, and Lenis smooth scrolling. The homepage body is blank. The Terms, Privacy, and Cookies routes share a legal layout and are ready for policy copy.
 
